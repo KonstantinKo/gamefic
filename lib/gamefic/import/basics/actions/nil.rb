@@ -19,7 +19,7 @@ respond nil, Query::Text.new() do |actor, string|
     elsif found.length > 1
       actor.tell "I'm not sure if #{words[0]} means #{found.join_and(', ', ' or ')}."
     else
-      actor.tell "I don't know what you mean by '#{string}.'"
+      actor.tell "I don't know what you mean by \"#{string}\"."
     end
   end
 end

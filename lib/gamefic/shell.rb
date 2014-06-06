@@ -23,7 +23,7 @@ module Gamefic
   class Shell
     attr_accessor :argv
     def initialize
-    
+
     end
     def execute
       if ARGV.length == 0
@@ -297,7 +297,7 @@ EOS
               cur_stack.pop
               cur_dir = ''
               while cur_stack.length > 0
-                cur_dir += '/' + cur_stack.shift              
+                cur_dir += '/' + cur_stack.shift
                 if !File.exist?(destination + cur_dir)
                   FileUtils.mkdir_p dest, :mode => 0700, :verbose => false
                 end

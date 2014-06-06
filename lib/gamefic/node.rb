@@ -1,5 +1,4 @@
 module Gamefic
-
 	module Node
 		def children
 			if @children == nil
@@ -37,7 +36,7 @@ module Gamefic
 			return array
 		end
 	end
-	
+
 	module Branch
 		include Node
 		def parent
